@@ -1,0 +1,169 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'async' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /home/silvio/WebDev/Nodejs/sales/package.json
+5 warn package.json sales-api@ No description
+6 warn package.json sales-api@ No repository field.
+7 warn package.json sales-api@ No README data
+8 warn package.json sales-api@ No license field.
+9 verbose installManyTop reading scoped package data from /home/silvio/WebDev/Nodejs/sales/node_modules/async/package.json
+10 verbose installManyTop reading scoped package data from /home/silvio/WebDev/Nodejs/sales/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /home/silvio/WebDev/Nodejs/sales/node_modules/express/package.json
+12 verbose installManyTop reading scoped package data from /home/silvio/WebDev/Nodejs/sales/node_modules/mongoose/package.json
+13 info package.json mongoose@3.6.20 No license field.
+14 verbose readDependencies loading dependencies from /home/silvio/WebDev/Nodejs/sales/package.json
+15 verbose install async is installed as 1.4.0
+16 silly cache add args [ 'async@^1.4.0', null ]
+17 verbose cache add spec async@^1.4.0
+18 silly cache add parsed spec { raw: 'async@^1.4.0',
+18 silly cache add   scope: null,
+18 silly cache add   name: 'async',
+18 silly cache add   rawSpec: '^1.4.0',
+18 silly cache add   spec: '>=1.4.0 <2.0.0',
+18 silly cache add   type: 'range' }
+19 silly addNamed async@>=1.4.0 <2.0.0
+20 verbose addNamed ">=1.4.0 <2.0.0" is a valid semver range for async
+21 silly addNameRange { name: 'async', range: '>=1.4.0 <2.0.0', hasData: false }
+22 silly mapToRegistry name async
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/async
+26 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+27 verbose get https://registry.npmjs.org/async not expired, no request
+28 silly addNameRange number 2 { name: 'async', range: '>=1.4.0 <2.0.0', hasData: true }
+29 silly addNameRange versions [ 'async',
+29 silly addNameRange   [ '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.4',
+29 silly addNameRange     '0.1.5',
+29 silly addNameRange     '0.1.6',
+29 silly addNameRange     '0.1.7',
+29 silly addNameRange     '0.1.8',
+29 silly addNameRange     '0.1.9',
+29 silly addNameRange     '0.1.10',
+29 silly addNameRange     '0.1.11',
+29 silly addNameRange     '0.1.12',
+29 silly addNameRange     '0.1.13',
+29 silly addNameRange     '0.1.14',
+29 silly addNameRange     '0.1.15',
+29 silly addNameRange     '0.1.16',
+29 silly addNameRange     '0.1.17',
+29 silly addNameRange     '0.1.18',
+29 silly addNameRange     '0.1.19',
+29 silly addNameRange     '0.1.20',
+29 silly addNameRange     '0.1.21',
+29 silly addNameRange     '0.1.22',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.4',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.6',
+29 silly addNameRange     '0.2.7',
+29 silly addNameRange     '0.2.8',
+29 silly addNameRange     '0.2.9',
+29 silly addNameRange     '0.2.10',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.6.1',
+29 silly addNameRange     '0.6.2',
+29 silly addNameRange     '0.7.0',
+29 silly addNameRange     '0.8.0',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.9.2',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '1.4.0' ] ]
+30 silly addNamed async@1.4.0
+31 verbose addNamed "1.4.0" is a plain semver version for async
+32 silly cache afterAdd async@1.4.0
+33 verbose afterAdd /home/silvio/.npm/async/1.4.0/package/package.json not in flight; writing
+34 verbose afterAdd /home/silvio/.npm/async/1.4.0/package/package.json written
+35 silly install resolved [ { name: 'async',
+35 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+35 silly install resolved     main: 'lib/async.js',
+35 silly install resolved     author: { name: 'Caolan McMahon' },
+35 silly install resolved     version: '1.4.0',
+35 silly install resolved     keywords: [ 'async', 'callback', 'utility', 'module' ],
+35 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+35 silly install resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     devDependencies:
+35 silly install resolved      { benchmark: 'github:bestiejs/benchmark.js',
+35 silly install resolved        bluebird: '^2.9.32',
+35 silly install resolved        coveralls: '^2.11.2',
+35 silly install resolved        'es6-promise': '^2.3.0',
+35 silly install resolved        jscs: '^1.13.1',
+35 silly install resolved        jshint: '~2.8.0',
+35 silly install resolved        lodash: '^3.9.0',
+35 silly install resolved        mkdirp: '~0.5.1',
+35 silly install resolved        'native-promise-only': '^0.8.0-a',
+35 silly install resolved        nodeunit: '>0.0.0',
+35 silly install resolved        nyc: '^2.1.0',
+35 silly install resolved        rsvp: '^3.0.18',
+35 silly install resolved        'uglify-js': '~2.4.0',
+35 silly install resolved        xyz: '^0.5.0',
+35 silly install resolved        yargs: '~3.9.1' },
+35 silly install resolved     jam: { main: 'lib/async.js', include: [Object], categories: [Object] },
+35 silly install resolved     scripts:
+35 silly install resolved      { test: 'npm run-script lint && nodeunit test/test-async.js',
+35 silly install resolved        lint: 'jshint lib/*.js test/*.js perf/*.js && jscs lib/*.js test/*.js perf/*.js',
+35 silly install resolved        coverage: 'nyc npm test && nyc report',
+35 silly install resolved        coveralls: 'nyc npm test && nyc report --reporter=text-lcov | coveralls' },
+35 silly install resolved     spm: { main: 'lib/async.js' },
+35 silly install resolved     volo: { main: 'lib/async.js', ignore: [Object] },
+35 silly install resolved     gitHead: '5bfcd31c72e003f96df025e75753463da61f49f9',
+35 silly install resolved     homepage: 'https://github.com/caolan/async#readme',
+35 silly install resolved     _id: 'async@1.4.0',
+35 silly install resolved     _shasum: '35f86f83c59e0421d099cd9a91d8278fb578c00d',
+35 silly install resolved     _from: 'async@>=1.4.0 <2.0.0',
+35 silly install resolved     _npmVersion: '2.13.0',
+35 silly install resolved     _nodeVersion: '2.4.0',
+35 silly install resolved     _npmUser: { name: 'megawac', email: 'megawac@gmail.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '35f86f83c59e0421d099cd9a91d8278fb578c00d',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/async/-/async-1.4.0.tgz' },
+35 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-1.4.0.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install async@1.4.0 into /home/silvio/WebDev/Nodejs/sales
+37 info installOne async@1.4.0
+38 verbose installOne of async to /home/silvio/WebDev/Nodejs/sales not in flight; installing
+39 warn locking Error: EACCES, open '/home/silvio/.npm/_locks/async-20b38746be6013c5.lock'
+39 warn locking     at Error (native)
+39 warn locking  /home/silvio/.npm/_locks/async-20b38746be6013c5.lock failed { [Error: EACCES, open '/home/silvio/.npm/_locks/async-20b38746be6013c5.lock']
+39 warn locking   errno: -13,
+39 warn locking   code: 'EACCES',
+39 warn locking   path: '/home/silvio/.npm/_locks/async-20b38746be6013c5.lock' }
+40 verbose stack Error: Attempt to unlock /home/silvio/WebDev/Nodejs/sales/node_modules/async, which hasn't been locked
+40 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+40 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+41 verbose cwd /home/silvio/WebDev/Nodejs/sales
+42 error Linux 3.13.0-45-generic
+43 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "async"
+44 error node v0.12.7
+45 error npm  v2.11.3
+46 error Attempt to unlock /home/silvio/WebDev/Nodejs/sales/node_modules/async, which hasn't been locked
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]

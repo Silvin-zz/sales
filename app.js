@@ -11,11 +11,12 @@ var entities    = require('./app/models/index');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api/entity/users'     , entities.user);
-app.use('/api/entity/products'  , entities.product);
+app.use('/api/entity/user'      , entities.user);
+app.use('/api/entity/product'   , entities.product);
+app.use('/api/entity/sale'      , entities.sale);
 
 
 
 
 app.listen(port);
-console.log('Magic happens on port ' + port);
+console.log('Runing sales app on port ' + port);
