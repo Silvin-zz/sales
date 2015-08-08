@@ -4,14 +4,14 @@ var router      = express.Router();          // get an instance of the express R
 
 
 // MODELOS //
-var Product        = require('../entity/product');
+var Product     = require('../entity/product');
 
 router.post('/', function(req, res) {
 
     var productObject          = new Product();
     productObject.title        = req.body.title;
     productObject.description  = req.body.description;
-    productObject.price        = req.body.price;
+    productObject.cost         = req.body.cost;
     productObject.save(function(err){
 
         if(err)
