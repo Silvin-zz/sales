@@ -11,36 +11,44 @@ router.post('/', function(req, res) {
 
     var detail             = [];
     var saleObject          = new Sale();
-    saleObject.subtotal     = req.body.title;
+    saleObject.subtotal     = req.body.subtotal;
     saleObject.tax          = req.body.tax;
     saleObject.total        = req.body.total;
     saleObject.discount     = req.body.discount;
-    var product             = null;
+    var tmpProducts         = req.body.detail;
+    var productIds          = [];
+    console.log(tmpProducts);
+
     //Recorremos todos los productos que integran la venta y obtenemos los datos del producto.
-    for(var a = 0; a < req.body.detail.length; a++){
-        var productDetail   = {};
-        product             = req.body.detail[a];
-        Product.findById(product.product_id, function(err, productObject){
-            bandera=req.body.detail.length==a+1?true:false;
-            productDetail.count     = product.count;
-            productDetail.price     = productObject.price;
-            productDetail.title     = productObject.title;
-            productDetail._id       = productObject._id;
-            detail.push(productDetail);
-            console.log(productDetail);
-            console.log(detail);
-        });
+    for(var a = 0; a < tmpProducts.length; a++){
+        productIds.push(tmpProducts[a]._id);
     }
-    console.log("==========================");
-    console.log(detail);
-    saleObject.detail       = detail;
+    console.log(productIds);
 
+    //Buscamos los productos para la venta.
+    Product.find({"_id": {$in: productIds }}, function(err, products){
+        
+        for( a = 0; a < products.length; a++ ){
 
-    saleObject.save(function(err){
-        if(err)
-            res.send(err);
-        res.json(saleObject);
+            var productDetail   = {};
+            productDetail.count = tmpProducts[a].count;
+            productDetail.cost  = products[a].cost;
+            productDetail.title = products[a].title;
+            productDetail._id   = products[a]._id;
+            detail.push(productDetail);
+
+        } 
+        console.log(detail);
+
+        saleObject.detail       =detail;
+        saleObject.save(function(err){
+            if(err)
+                res.send(err);
+            res.json(saleObject);
+        });
+
     });
+    
 });
 
 
