@@ -1,5 +1,8 @@
 {
   "name": "sales-api",
+  "description": "API sales product",
+  "version": "0.0.1",
+  "private": true,
   "main": "app.js",
   "dependencies": {
     "async": "^1.4.0",
